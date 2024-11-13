@@ -1,0 +1,11 @@
+For Mac M1, download the bash script to download
+>wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh
+>bash Miniconda3-latest-MacOSX-arm64.sh
+
+Before creating a new environment, make sure to update conda
+>conda update --all
+
+Now create new conda environment:
+>conda create -n "researcher" python-3.11
+
+
