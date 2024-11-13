@@ -2,10 +2,18 @@ For Mac M1, download the bash script to download
 >wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh
 >bash Miniconda3-latest-MacOSX-arm64.sh
 
-Before creating a new environment, make sure to update conda
->conda update --all
+Once you installed Miniconda, it'll ask you if you want to activate it as default upon startup, yes.  Then restart terminal.  You'll have python 3.12.7 installed with the base conda
+>python
+>Python 3.12.7 | packaged by Anaconda, Inc.....
 
-Now create new conda environment:
+So you're good to go.  Just use this environment for AIResearch.
+
+A few useful conda commands:
+>conda deactivate
+>conda update --all
 >conda create -n "researcher" python-3.11
+
+Here's where you can download the python 3.12.3
+>wget https://www.python.org/ftp/python/3.12.3/python-3.12.3-macos11.pkg
 
 
