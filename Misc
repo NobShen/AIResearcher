@@ -6,14 +6,34 @@ Once you installed Miniconda, it'll ask you if you want to activate it as defaul
 >python
 >Python 3.12.7 | packaged by Anaconda, Inc.....
 
-So you're good to go.  Just use this environment for AIResearch.
+So you're good to go.  Now create researcher env
+>conda create -n "researcher" python=3.12
+
+Get the source code
+>git clone https://github.com/NobShen/AIResearcher.git
+
+Now cd into AIResearcher directory and create a few more directories:
+>cd AIResearcher
+>mkdir chroma
+>mkdir sourceDocs
+>mkdir archive
+>mkdir obsidianVault
+
+Now update config_default.py:
+
+```DB_PATH = "/Users/jason/AIResearcher/chroma"
+```GOOGLE_API_KEY = 'AIza......'
+```MODEL_NAME = 'gemini-1.5-pro'
+```CONVERSATION_FILE = '/Users/jason/AIResearcher/user/obsidianVault/AIResearch.md'
+
+And update importall.py to reflect new directory structure:
+```document_directory = "/Users/jason/AIResearcher/sourceDocs"
 
 A few useful conda commands:
 >conda deactivate
 >conda update --all
->conda create -n "researcher" python-3.11
 
-Here's where you can download the python 3.12.3
+Here's where you can download the python 3.12.3 if needed:
 >wget https://www.python.org/ftp/python/3.12.3/python-3.12.3-macos11.pkg
 
 
